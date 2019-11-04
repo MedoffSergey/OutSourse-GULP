@@ -1749,6 +1749,7 @@ body {
 }
 
 .btn {
+    margin-top: 15px;
     display: inline-block;
     vertical-align: top;
     padding: 1rem 2rem;
@@ -1779,10 +1780,10 @@ body {
 .circle {
     width: 450px;
     height: 450px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f5576c), to(#f093fb));
-    background: -webkit-linear-gradient(top, #f5576c, #f093fb);
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+    /* background: -webkit-linear-gradient(top, #f5576c, #f093fb);
     background: -o-linear-gradient(top, #f5576c, #f093fb);
-    background: linear-gradient(to bottom, #f5576c, #f093fb);
+    background: linear-gradient(to bottom, #f5576c, #f093fb); */
     -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
     border-radius: 58% 42% 100% 0% / 29% 100% 0% 71%;
@@ -1809,19 +1810,19 @@ body {
 
 @-webkit-keyframes circleRadius {
     0% {
-        border-radius: 58% 42% 100% 0% / 29% 100% 0% 71%;
+        border-radius: 100% 42% 100% 0% / 100% 100% 0% 71%;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
 
     50% {
-        border-radius: 64% 36% 61% 39% / 79% 65% 35% 21%;
+        border-radius: 100% 36% 61% 39% / 100% 65% 35% 21%;
         -webkit-transform: translate3d(-100px, -80px, 0);
-        transform: translate3d(-100px, -80px, 0);
+        transform: translate3d(-130px, -100px, 0);
     }
 
     100% {
-        border-radius: 27% 73% 36% 64% / 51% 63% 37% 49%;
+        border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
         -webkit-transform: translate3d(0, -100px, 0);
         transform: translate3d(0, -100px, 0);
     }
@@ -2150,7 +2151,7 @@ body {
 }
 
 .portfolio__arrow-icon {
-    width: 20px;
+    width: 30px;
     height: 30px;
     fill: #c5c5c5;
     -webkit-transition: fill .1s linear;
@@ -2302,4 +2303,16 @@ body {
 
 .slick-dots button:focus {
     outline: 0;
+}
+
+
+.contacts__item{
+  list-style-type: none;
+}
+
+.contacts__link {
+  text-decoration: none;
+  padding-bottom: 40px;
+  color: black;
+  background-color: #ffffff;
 }
