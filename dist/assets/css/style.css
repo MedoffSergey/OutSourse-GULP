@@ -1323,25 +1323,21 @@ body {
 .modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform 0.3s ease-out;
     transition: -webkit-transform 0.3s ease-out;
-    -o-transition: transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     -webkit-transform: translate(0, -50px);
-    -ms-transform: translate(0, -50px);
     transform: translate(0, -50px);
 }
 
 @media (prefers-reduced-motion: reduce) {
     .modal.fade .modal-dialog {
         -webkit-transition: none;
-        -o-transition: none;
         transition: none;
     }
 }
 
 .modal.show .modal-dialog {
     -webkit-transform: none;
-    -ms-transform: none;
     transform: none;
 }
 
@@ -1546,14 +1542,12 @@ body {
 
 .fade {
     -webkit-transition: opacity 0.15s linear;
-    -o-transition: opacity 0.15s linear;
     transition: opacity 0.15s linear;
 }
 
 @media (prefers-reduced-motion: reduce) {
     .fade {
         -webkit-transition: none;
-        -o-transition: none;
         transition: none;
     }
 }
@@ -1571,14 +1565,12 @@ body {
     height: 0;
     overflow: hidden;
     -webkit-transition: height 0.35s ease;
-    -o-transition: height 0.35s ease;
     transition: height 0.35s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
     .collapsing {
         -webkit-transition: none;
-        -o-transition: none;
         transition: none;
     }
 }
@@ -1640,7 +1632,6 @@ body {
     text-decoration: none;
     border-radius: 20px;
     -webkit-transition: background .25s linear;
-    -o-transition: background .25s linear;
     transition: background .25s linear;
     border-radius: 15px/45px;
 }
@@ -1761,7 +1752,6 @@ body {
     text-decoration: none;
     cursor: pointer;
     -webkit-transition: background .2s linear, color .2s linear;
-    -o-transition: background .2s linear, color .2s linear;
     transition: background .2s linear, color .2s linear;
 }
 
@@ -1831,7 +1821,6 @@ body {
     width: 450px;
     height: 550px;
     background-image: -webkit-gradient(linear, left bottom, left top, from(#feada6), to(#f5efef));
-    background-image: -o-linear-gradient(bottom, #feada6 0%, #f5efef 100%);
     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
     -webkit-box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
@@ -1927,7 +1916,6 @@ body {
     height: 30px;
     fill: #ababab;
     -webkit-transition: fill .1s linear;
-    -o-transition: fill .1s linear;
     transition: fill .1s linear;
 }
 
@@ -1964,7 +1952,6 @@ body {
     z-index: 1;
     -webkit-transition: -webkit-transform .2s linear;
     transition: -webkit-transform .2s linear;
-    -o-transition: transform .2s linear;
     transition: transform .2s linear;
     transition: transform .2s linear, -webkit-transform .2s linear;
 }
@@ -1975,7 +1962,6 @@ body {
 
 .modal__close:hover {
     -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -2130,7 +2116,6 @@ body {
 
 .portfolio__item:hover .portfolio__title {
     -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0);
 }
 
@@ -2143,7 +2128,6 @@ body {
     max-width: 100%;
     height: auto;
     -webkit-transition: opacity .1s linear;
-    -o-transition: opacity .1s linear;
     transition: opacity .1s linear;
 }
 
@@ -2158,11 +2142,9 @@ body {
     left: 0;
     z-index: 1;
     -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
     transform: translateX(100%);
     -webkit-transition: -webkit-transform .2s linear;
     transition: -webkit-transform .2s linear;
-    -o-transition: transform .2s linear;
     transition: transform .2s linear;
     transition: transform .2s linear, -webkit-transform .2s linear;
 }
@@ -2188,14 +2170,12 @@ body {
 .portfolio__arrow--prev {
     left: -2rem;
     -webkit-transform: translateY(-50%) rotate(180deg);
-    -ms-transform: translateY(-50%) rotate(180deg);
     transform: translateY(-50%) rotate(180deg);
 }
 
 .portfolio__arrow--next {
     right: -2rem;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -2204,7 +2184,6 @@ body {
     height: 30px;
     fill: #c5c5c5;
     -webkit-transition: fill .1s linear;
-    -o-transition: fill .1s linear;
     transition: fill .1s linear;
 }
 
@@ -2249,7 +2228,6 @@ body {
 .slick-slider .slick-track,
 .slick-slider .slick-list {
     -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
