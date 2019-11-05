@@ -1704,11 +1704,11 @@ body {
 
 @media (max-width: 1330px) {
     .author {
-        right: 2rem;
+        right: 0rem;
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 1000px) {
     .author {
         display: none;
     }
@@ -1780,8 +1780,8 @@ body {
 }
 
 .circle {
-    width: 450px;
-    height: 450px;
+    width: 650px;
+    height: 650px;
     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
     /* background: -webkit-linear-gradient(top, #f5576c, #f093fb);
     background: -o-linear-gradient(top, #f5576c, #f093fb);
@@ -1790,17 +1790,17 @@ body {
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
     border-radius: 100% 100% 100% 100% / 29% 100% 0% 71%;
     -webkit-animation: circleRadius 8s alternate infinite;
-    animation: circleRadius 8s alternate infinite;
+    animation: circleRadius 10s alternate infinite;
     position: absolute;
-    right: 2rem;
-    bottom: 2rem;
+    right: 0rem;
+    bottom: 0rem;
     z-index: 1;
 }
 
 @media (max-width: 1330px) {
     .circle {
-        right: -2rem;
-        bottom: -2rem;
+        right: -10rem;
+        bottom: -10rem;
     }
 }
 
@@ -1808,45 +1808,29 @@ body {
     .circle {
         display: none;
     }
-}
+  }
 
-@-webkit-keyframes circleRadius {
-    0% {
-        border-radius: 58% 42% 100% 0% / 29% 100% 0% 71%;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-
-    50% {
-        border-radius: 64% 36% 61% 39% / 79% 65% 35% 21%;
-        -webkit-transform: translate3d(-100px, -80px, 0);
-        transform: translate3d(-100px, -80px, 0);
-    }
-
-    100% {
-        border-radius: 27% 73% 36% 64% / 51% 63% 37% 49%;
-        -webkit-transform: translate3d(0, -100px, 0);
-        transform: translate3d(0, -100px, 0);
-    }
-}
 
 @keyframes circleRadius {
     0% {
-        border-radius: 58% 42% 100% 0% / 29% 100% 0% 71%;
-        -webkit-transform: translate3d(0, 0, 0);
+        border-radius: 50% 40% 30% 20% / 50% 40% 30% 20%;
         transform: translate3d(0, 0, 0);
     }
 
+    25% {
+        border-radius: 60% 50% 35% 25% / 60% 50% 35% 25%;
+        transform: translate3d(0, 0, 0);
+    }
+
+
     50% {
-        border-radius: 64% 36% 61% 39% / 79% 65% 35% 21%;
-        -webkit-transform: translate3d(-100px, -80px, 0);
-        transform: translate3d(-100px, -80px, 0);
+        border-radius: 75% 55% 0% 100% /75% 55% 0% 100%;
+        transform: translate3d(-150px, 0px, 0);
     }
 
     100% {
-        border-radius: 27% 73% 36% 64% / 51% 63% 37% 49%;
-        -webkit-transform: translate3d(0, -100px, 0);
-        transform: translate3d(0, -100px, 0);
+        border-radius: 100% 85% 0% 70/ 100% 85% 0% 70%;
+        transform: translate3d(0, -150px, 0);
     }
 }
 
