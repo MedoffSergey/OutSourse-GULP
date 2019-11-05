@@ -1,7 +1,7 @@
 .author {
     position: absolute;
     right: 0rem;
-    bottom: 0;
+    bottom: -1rem;
     z-index: 2;
 
 	@media (max-width: $breakpoint_xl) {
@@ -12,4 +12,3 @@
 		display: none;
 	}
 }
-
