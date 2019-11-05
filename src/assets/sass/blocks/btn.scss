@@ -15,12 +15,13 @@
     text-decoration: none;
     cursor: pointer;
 
-    transition: background .1s linear, color .1s linear;
+    transition: background .2s linear, color .2s linear;
 
     &--pink {
         border: 2px solid $pink;
 
         &:hover {
+            box-shadow: 0px 0px 20px rgba(52, 48, 70, 0.5);
             color: $white;
             background-color: $pink;
         }

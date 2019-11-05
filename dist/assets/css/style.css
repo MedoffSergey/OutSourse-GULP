@@ -1,11 +1,11 @@
 /* Default styles */
 html {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 body {
     margin: 0;
-    background-color: #ffffff;
+    background-color: #fafafa;
     font-family: 'Montserrat', sans-serif;
     color: #121212;
     font-size: 1rem;
@@ -1593,6 +1593,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    background-color: #fff;
 }
 
 .header {
@@ -1638,21 +1639,16 @@ body {
     color: #121212;
     text-decoration: none;
     border-radius: 20px;
-    -webkit-transition: background .1s linear;
-    -o-transition: background .1s linear;
-    transition: background .1s linear;
+    -webkit-transition: background .25s linear;
+    -o-transition: background .25s linear;
+    transition: background .25s linear;
     border-radius: 15px/45px;
 }
 
 .nav__link:hover {
-    border-radius: 15px/45px;
-    background-color: #b59795;
-}
-
-/* .nav__link.active {
     color: #fff;
     background-color: #e68080;
-} */
+}
 
 .lang {
     text-align: right;
@@ -1704,11 +1700,11 @@ body {
 
 @media (max-width: 1330px) {
     .author {
-        right: 0rem;
+        right: 2rem;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 575px) {
     .author {
         display: none;
     }
@@ -1751,7 +1747,6 @@ body {
 }
 
 .btn {
-    margin-top: 15px;
     display: inline-block;
     vertical-align: top;
     padding: 1rem 2rem;
@@ -1765,9 +1760,9 @@ body {
     color: #121212;
     text-decoration: none;
     cursor: pointer;
-    -webkit-transition: background .1s linear, color .1s linear;
-    -o-transition: background .1s linear, color .1s linear;
-    transition: background .1s linear, color .1s linear;
+    -webkit-transition: background .2s linear, color .2s linear;
+    -o-transition: background .2s linear, color .2s linear;
+    transition: background .2s linear, color .2s linear;
 }
 
 .btn--pink {
@@ -1775,22 +1770,74 @@ body {
 }
 
 .btn--pink:hover {
+    -webkit-box-shadow: 0px 0px 20px rgba(52, 48, 70, 0.5);
+    box-shadow: 0px 0px 20px rgba(52, 48, 70, 0.5);
     color: #fff;
     background-color: #e68080;
 }
 
+.contacts {
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts--modal {
+    margin-top: .2rem;
+}
+
+.contacts__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.contacts__item:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: #121212;
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    z-index: 1;
+}
+
+.contacts__item:last-child:after {
+    display: none;
+}
+
+.contacts--modal .contacts__item {
+    display: block;
+    margin-right: 0;
+}
+
+.contacts--modal .contacts__item:after {
+    display: none;
+}
+
+.contacts__link {
+    color: #121212;
+    text-decoration: none;
+}
+
+.contacts__link:hover {
+    text-decoration: underline;
+}
+
 .circle {
-    width: 650px;
-    height: 650px;
+    width: 450px;
+    height: 550px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#feada6), to(#f5efef));
+    background-image: -o-linear-gradient(bottom, #feada6 0%, #f5efef 100%);
     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
-    /* background: -webkit-linear-gradient(top, #f5576c, #f093fb);
-    background: -o-linear-gradient(top, #f5576c, #f093fb);
-    background: linear-gradient(to bottom, #f5576c, #f093fb); */
-    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-    border-radius: 100% 100% 100% 100% / 29% 100% 0% 71%;
+    -webkit-box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 58% 42% 100% 0% / 29% 100% 0% 71%;
     -webkit-animation: circleRadius 8s alternate infinite;
-    animation: circleRadius 10s alternate infinite;
+    animation: circleRadius 8s alternate infinite;
     position: absolute;
     right: 0rem;
     bottom: 0rem;
@@ -1799,8 +1846,8 @@ body {
 
 @media (max-width: 1330px) {
     .circle {
-        right: -10rem;
-        bottom: -10rem;
+        right: -2rem;
+        bottom: -2rem;
     }
 }
 
@@ -1808,29 +1855,45 @@ body {
     .circle {
         display: none;
     }
-  }
+}
 
-
-@keyframes circleRadius {
+@-webkit-keyframes circleRadius {
     0% {
-        border-radius: 50% 40% 30% 20% / 50% 40% 30% 20%;
+        border-radius: 58% 42% 100% 0% / 29% 100% 0% 71%;
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
-
-    25% {
-        border-radius: 60% 50% 35% 25% / 60% 50% 35% 25%;
-        transform: translate3d(0, 0, 0);
-    }
-
 
     50% {
-        border-radius: 75% 55% 0% 100% /75% 55% 0% 100%;
-        transform: translate3d(-150px, 0px, 0);
+        border-radius: 64% 36% 61% 39% / 79% 65% 35% 21%;
+        -webkit-transform: translate3d(-100px, -40px, 0);
+        transform: translate3d(-100px, -80px, 0);
     }
 
     100% {
-        border-radius: 100% 85% 0% 70/ 100% 85% 0% 70%;
-        transform: translate3d(0, -150px, 0);
+        border-radius: 27% 73% 36% 64% / 51% 63% 37% 49%;
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes circleRadius {
+    0% {
+        border-radius: 58% 42% 100% 0% / 29% 100% 0% 71%;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        border-radius: 64% 36% 61% 39% / 79% 65% 35% 21%;
+        -webkit-transform: translate3d(-100px, -40px, 0);
+        transform: translate3d(-100px, -80px, 0);
+    }
+
+    100% {
+        border-radius: 27% 73% 36% 64% / 51% 63% 37% 49%;
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
     }
 }
 
@@ -2137,7 +2200,7 @@ body {
 }
 
 .portfolio__arrow-icon {
-    width: 30px;
+    width: 20px;
     height: 30px;
     fill: #c5c5c5;
     -webkit-transition: fill .1s linear;
@@ -2289,16 +2352,4 @@ body {
 
 .slick-dots button:focus {
     outline: 0;
-}
-
-
-.contacts__item{
-  list-style-type: none;
-}
-
-.contacts__link {
-  text-decoration: none;
-  padding-bottom: 40px;
-  color: black;
-  background-color: #ffffff;
 }
