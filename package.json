@@ -4,7 +4,7 @@
     "description": "project using gulp4",
     "author": "Dmitrijs Valaks",
     "devDependencies": {
-        "browser-sync": "^2.26.3",
+        "browser-sync": "^2.26.7",
         "del": "^4.1.0",
         "gulp": "^4.0.0",
         "gulp-autoprefixer": "^6.0.0",
@@ -20,6 +20,7 @@
         "panini": "^1.6.3"
     },
     "dependencies": {
+        "axios": "^0.19.0",
         "bootstrap": "^4.3.1",
         "slick-carousel": "^1.8.1"
     }
