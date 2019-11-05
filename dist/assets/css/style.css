@@ -1,11 +1,11 @@
 /* Default styles */
 html {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 body {
     margin: 0;
-    background-color: #fafafa;
+    background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     color: #121212;
     font-size: 1rem;
@@ -1602,9 +1602,9 @@ body {
 .header__inner {
     padding: .8rem 1.4rem;
     background-color: #fff;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+    border-radius: 15px/45px;
+    -webkit-box-shadow: 10px 10px 10px rgba(52, 48, 70, 0.5);
+    box-shadow: 0px 0px 20px rgba(52, 48, 70, 0.5);
 }
 
 .header__row {
@@ -1641,16 +1641,18 @@ body {
     -webkit-transition: background .1s linear;
     -o-transition: background .1s linear;
     transition: background .1s linear;
+    border-radius: 15px/45px;
 }
 
 .nav__link:hover {
-    background-color: #f2f2f2;
+    border-radius: 15px/45px;
+    background-color: #b59795;
 }
 
-.nav__link.active {
+/* .nav__link.active {
     color: #fff;
     background-color: #e68080;
-}
+} */
 
 .lang {
     text-align: right;
@@ -1786,12 +1788,12 @@ body {
     background: linear-gradient(to bottom, #f5576c, #f093fb); */
     -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
-    border-radius: 58% 42% 100% 0% / 29% 100% 0% 71%;
+    border-radius: 100% 100% 100% 100% / 29% 100% 0% 71%;
     -webkit-animation: circleRadius 8s alternate infinite;
     animation: circleRadius 8s alternate infinite;
     position: absolute;
-    right: 0rem;
-    bottom: 0rem;
+    right: 2rem;
+    bottom: 2rem;
     z-index: 1;
 }
 
@@ -1810,19 +1812,19 @@ body {
 
 @-webkit-keyframes circleRadius {
     0% {
-        border-radius: 100% 42% 100% 0% / 100% 100% 0% 71%;
+        border-radius: 58% 42% 100% 0% / 29% 100% 0% 71%;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
 
     50% {
-        border-radius: 100% 36% 61% 39% / 100% 65% 35% 21%;
+        border-radius: 64% 36% 61% 39% / 79% 65% 35% 21%;
         -webkit-transform: translate3d(-100px, -80px, 0);
-        transform: translate3d(-130px, -100px, 0);
+        transform: translate3d(-100px, -80px, 0);
     }
 
     100% {
-        border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
+        border-radius: 27% 73% 36% 64% / 51% 63% 37% 49%;
         -webkit-transform: translate3d(0, -100px, 0);
         transform: translate3d(0, -100px, 0);
     }
