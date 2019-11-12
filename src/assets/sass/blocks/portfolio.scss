@@ -2,6 +2,11 @@
     position: relative;
 }
 
+.container_position{
+  position: relative;
+  top: -20%;
+}
+
 .portfolio__slider {
     position: relative;
     height: 330px;
@@ -36,7 +41,7 @@
 }
 
 .portfolio__item {
-    max-width: 550px;
+    max-width: 100%;
     position: relative;
     overflow: hidden;
 
@@ -90,7 +95,7 @@
     cursor: pointer;
 
     position: absolute;
-    top: 50%;
+    top: 80%;
     z-index: 2;
 
     &:hover {
