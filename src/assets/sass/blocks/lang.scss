@@ -14,4 +14,9 @@
     &.active {
         color: $pink;
     }
+
+    @media (max-width: $breakpoint_sm) {
+    display: none;
+
+    }
 }

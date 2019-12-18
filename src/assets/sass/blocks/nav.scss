@@ -1,25 +1,28 @@
 .nav {
-    display: flex;
     font-size: 1rem;
     font-weight: 500;
 }
 
 .nav__link {
-    padding: .3rem 1.5rem;
-    margin-right: 1rem;
-    color: #121212;
-    text-decoration: none;
-    border-radius: 20px;
-    -webkit-transition: background .25s linear;
-    -o-transition: background .25s linear;
-    transition: background .25s linear;
-    border-radius: 15px/45px;
-
-    &:hover {
-        color: $white;
-        background-color: #e68080;;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: $black;
+  margin: 0 15px;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
 
 
+      &:hover {
+          color: $pink;
+          -webkit-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          transform: scale(1.1);
+    }
+
+    @media (max-width: $breakpoint_sm) {
+    display: block;
+    margin: 0 3px;
+    text-align: center;
     }
 
 }

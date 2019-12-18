@@ -1,17 +1,15 @@
 @import "vars";
 
-
 /* Default styles */
 html {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 body {
     margin: 0;
-
     background-color: $gray;
-
-    font-family: 'Montserrat', sans-serif;
+    
+    font-family: proxima-nova, sans-serif;
     color: $black;
     font-size: 1rem;
     line-height: 1.5;
