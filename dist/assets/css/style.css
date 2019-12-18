@@ -1852,7 +1852,6 @@ body {
 
 .col-sm-2 {
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .logo {
@@ -1937,7 +1936,7 @@ body {
 
 .content__title {
     margin: -50px 0 2rem;
-    display: block;
+    display: inline-block;
     font-size: 2rem;
     font-weight: 700;
     color: #121212;
@@ -1999,19 +1998,19 @@ body {
 }
 
 .btn {
-    display: inline-block;
-    vertical-align: top;
-    padding: 1rem 2rem;
-    background: none;
-    border: 0;
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 1rem;
-    line-height: 1.1;
-    font-weight: 500;
-    color: #121212;
     text-decoration: none;
-    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fe6637;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
     -webkit-transition: background .2s linear, color .2s linear;
     transition: background .2s linear, color .2s linear;
 }
@@ -2459,7 +2458,7 @@ body {
 }
 
 .footer {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 /* vendor libs */
